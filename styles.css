@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.wrapper{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh; 
+    perspective: 10px;
+} 
+.container{
+    display: flex;
+    position: relative;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.bg{
+ position: absolute; 
+ z-index: -1;
+ object-fit: cover;  
+ height: 100%;
+}
+.aligarh-city{
+    transform: translateZ(-40px) scale(5) ;
+    width: 100%;
+    
+}
+.diya{
+    
+    transform: translateZ(-20px) scale(1.8);
+    margin-top: 60%;
+    opacity: 0.7;
+    margin-left:-50%;
+    
+}
+.aligarh-heading{
+    color: white;
+    align-self: flex-start;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 7rem;
+    text-shadow: 3px 4px blue;
+    margin-left: -10%;
+}
+section{
+    background-color: rgb(45,45,45);
+    color:white;
+    padding:1rem 0;
+}
+.image-title-text{
+    font-size:4rem ;
+    
+    padding-left: 30%;
+    background-color: rgb(236, 247, 243);
+    
+}
+.text{
+    font-size:1.5rem;
+    
+    margin: 0 5rem;
+}
+
+.image-title{
+    position:relative;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height:500px;
+}
+.desc{
+    position: absolute;
+    background-color: white;   
+    padding: 0.5rem 2.5rem;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%);
+    color:black;
+    font-size:3.5rem;
+    font-weight:600;
+}
+.kachori{
+    background-image: url("./assets/khachori.jpeg");
+}
+.amu{
+    background-image: url("./assets/amu.jpg");
+}
+.jawahar{
+    background-image: url("./assets/jawaharPark.jpg");
+}
+.footer{
+    background-color:  rgb(45,45,45);
+    border-top: 3px dotted rgb(123, 123, 128);
+}
+.footer-section{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10px;
+}
+@media (max-width:400px) {
+    .aligarh-heading{
+        font-size: 5rem;
+        margin-left: 5px;
+    }
+    .diya{
+        margin-top: 500px;
+    }
+    .text{
+        margin: 20px;
+        font-size: 20px;
+    }
+    .image-title-text {
+        font-size: 2.5rem;
+        padding-left: 0%;
+        background-color: rgb(217, 248, 237);
+    }
+    section{
+        background-color: rgb(20, 34, 28);
+    }
+    .desc{
+        font-size: 2rem;
+        padding: 0;
+    }
+}
